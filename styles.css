@@ -39,12 +39,22 @@
   header a {
     font-size: 1.5rem;
     color: var(--off-white);
+    transition: 300ms;
+  }
+  header a:hover {
+   color: orange;
+    transform: translateY(-4px);
   }
   /* end header link animations */
   
   /* article link transitions */
   main a {
     color: var(--danger-color);
+  }
+  
+  main a:hover {
+    background-color: darkorange;
+    color: white;
   }
   /* end article link transitions */
   
@@ -100,8 +110,27 @@
     border-radius: 12px;
     text-transform: uppercase;
     cursor: pointer;
+    animation: backflip 3s linear;
   }
   
+  @keyframes hover {
+    to {
+        transform: translateY(-18px);
+    }
+  }
+
+  @keyframes backflip {
+    8% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-50px) rotateZ(-180deg);
+    }
+    100% {
+        transform: translateY(0px) rotateZ(-360deg);
+    }
+  }
+
   main article {
     padding: 48px 96px;
   }
