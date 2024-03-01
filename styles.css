@@ -112,9 +112,7 @@
     cursor: pointer;
     animation: hover 1s infinite alternate linear;
   }
-  button {
-    
-  }
+  
   @keyframes hover {
     to {
         transform: translateY(-18px); background-color: #06b3bc;
