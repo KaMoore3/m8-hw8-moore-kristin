@@ -109,6 +109,9 @@
     padding: 12px 24px;
     border-radius: 12px;
     text-transform: uppercase;
+  }
+  
+  section.hero > button:hover {
     cursor: pointer;
     animation: hover 1s infinite alternate linear;
   }
@@ -116,18 +119,6 @@
   @keyframes hover {
     to {
         transform: translateY(-18px); background-color: #06b3bc;
-    }
-  }
-
-  @keyframes backflip {
-    8% {
-        transform: translateY(10px);
-    }
-    50% {
-        transform: translateY(-50px) rotateZ(-180deg);
-    }
-    100% {
-        transform: translateY(0px) rotateZ(-360deg);
     }
   }
 
